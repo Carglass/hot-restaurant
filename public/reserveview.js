@@ -25,7 +25,7 @@ $(document).ready(() => {
     let tableInput = new table(name, phoneNumber, email, uid);
     $.post("/api/tables", tableInput)
       .done(() => {
-        $("#success-modal").show();
+        console.log("success");
       })
       .fail(() => {
         console.log("post failed");
