@@ -13,17 +13,10 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// test data
-// =============================================================
-var tables = [
-    {
-        test: "test"
-    }
-];
-
 // ROUTING
-require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
+require('./routes/apiRoutes')(app);
+
 
 // logs when app is listening, on server side
 app.listen(PORT, function() {
