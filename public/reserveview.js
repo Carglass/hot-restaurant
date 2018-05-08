@@ -5,8 +5,6 @@ function table(name, phoneNumber, email, uid) {
   this.uid = uid;
 }
 
-function submitReservation(table) {}
-
 $(document).ready(() => {
   $(document).on("click", "#submit-reservation", function(event) {
     event.preventDefault();

@@ -15,4 +15,7 @@ module.exports = function(app) {
   app.get("/reserveview.js", function(req, res) {
     res.sendFile(path.join(__dirname, "./../public/reserveview.js"));
   });
+  app.get("/tablesview.js", function(req, res) {
+    res.sendFile(path.join(__dirname, "./../public/tablesview.js"));
+  });
 };

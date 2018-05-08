@@ -4,10 +4,10 @@ var path = require("path");
 // =============================================================
 var tables = [
   {
-    test: "test"
+    uid: "test1"
   },
   {
-    test: "test"
+    uid: "test2"
   }
 ];
 
