@@ -1,6 +1,6 @@
 
 
-let table = function() {
+let table = function(customerName, phoneNumber, customerEmail, customerID) {
     this.customerName = customerName;
     this.phoneNumber = phoneNumber;
     this.customerEmail = customerEmail;
