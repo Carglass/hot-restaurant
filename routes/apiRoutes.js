@@ -2,18 +2,7 @@ var path = require("path");
 
 // test data
 // =============================================================
-<<<<<<< HEAD
 var tables = [];
-=======
-var tables = [
-  {
-    uid: "test1"
-  },
-  {
-    uid: "test2"
-  }
-];
->>>>>>> ddf5efc05257fd9acd186049f76c1cdff8bb2578
 
 var waitlist = [];
 
