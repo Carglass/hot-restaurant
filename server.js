@@ -23,8 +23,8 @@ var tables = [
 ];
 
 // ROUTING
-require('apiRoutes');
-require('htmlRoutes');
+require('./routes/apiRoutes');
+require('./routes/htmlRoutes');
 
 // logs when app is listening, on server side
 app.listen(PORT, function() {
