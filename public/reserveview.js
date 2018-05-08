@@ -23,12 +23,19 @@ $(document).ready(() => {
       .val()
       .trim();
     let tableInput = new table(name, phoneNumber, email, uid);
-    $.post("./api/tables", tableInput)
+    $.post("/api/tables", tableInput)
       .done(() => {
         $("#success-modal").show();
       })
       .fail(() => {
         console.log("post failed");
       });
+  });
+
+  $(document).on("click", "#clear-form", function(event) {
+    $("#name").val("");
+    $("#phoneNumber").val("");
+    $("#email").val("");
+    $("#uid").val("");
   });
 });
